@@ -1,0 +1,544 @@
+<html>
+<head>
+<style>
+body{
+background:linear-gradient(rgba(83,129,54,0.75),rgba(83,129,54,0.75)),url('images/background.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+font-family:Arial;
+}
+
+#logo{
+height:100px;
+width:100%;
+position:fixed;
+top:0px;
+z-index:1000;
+background:rgb(83,129,54);
+padding-top:0px;
+}
+
+h1{
+color:white;
+margin-left:200px;
+margin-bottom:0px;
+}
+
+p{
+color:white;
+margin-left:200px;
+margin-top:0px;
+}
+
+/* NAVBAR */
+
+#nav{
+margin-top:100px;
+height:65px;
+width:1200px;
+background:white;
+margin-left:200px;
+border-radius:0px;
+position:sticky;
+top:100px;
+z-index:1000;
+}
+
+#nav ul{
+margin:0px;
+padding:0px;
+list-style:none;
+}
+
+#nav ul li{
+float:left;
+padding:24px 30px;
+color:gray;
+border-right:1px solid #eeeeee;
+}
+
+#nav ul li:hover{
+color:#82ad30;
+}
+
+#searchbox{
+float:right;
+margin-top:15px;
+margin-right:40px;
+border:1px solid #ddd;
+padding:5px;
+background:white;
+}
+#search{
+    border:none;
+    outline:none;
+}
+
+/* OUTER */
+
+#outer{
+height:1330px;
+width:1200px;
+background-color:white;
+margin-left:200px;
+margin-top:5px;
+border-radius: 20px;
+}
+
+#banner{
+height:325px;
+width:1200px;
+}
+
+#banner img{
+height:325px;
+width:1200px;
+}
+
+#line1{
+height:5px;
+width:1200px;
+background-color:green;
+}
+
+
+/* MAIN */
+
+#main{
+height:1000px;
+width:1200px;
+}
+
+#content{
+height:1000px;
+width:850px;
+float:left;
+}
+
+
+/* ROW 1 */
+
+#r1{
+height:450px;
+width:850px;
+border-bottom:0.5px solid;
+}
+
+#r1 h2{
+color:black;
+margin-left:30px;
+padding-top:25px;
+}
+
+#r1 .date{
+color:gray;
+margin-left:30px;
+font-size:15px;
+}
+
+.date span{
+color:#82ad30;
+text-decoration:underline;
+}
+
+#r1 img{
+height:55%;
+width:95%;
+margin-left:30px;
+}
+
+#r1 .text{
+margin-left:30px;
+margin-right:30px;
+color:gray;
+line-height:1.6;
+}
+
+#r1 .read{
+margin-left:20px;
+color:#82ad30;
+margin-top:5px;
+}
+
+
+/* ROW 2 */
+
+#r2{
+height:450px;
+width:850px;
+background-color:white;
+border-bottom:1px solid #ddd;
+}
+
+#r2 h2{
+color:black;
+margin-left:30px;
+padding-top:25px;
+}
+
+#r2 .date{
+color:gray;
+margin-left:30px;
+font-size:15px;
+}
+
+#r2 .date span{
+color:#82ad30;
+text-decoration:underline;
+}
+
+#r2 .text{
+color:gray;
+margin-left:30px;
+margin-right:30px;
+line-height:1.6;
+}
+
+#r2 .read{
+color:#82ad30;
+margin-left:30px;
+text-decoration:underline;
+}
+
+
+/* ROW 3 */
+
+#r3{
+height:57px;
+width:850px;
+background-color:white;
+border-radius: 0px 0px 0px 20px;
+}
+
+.text1{
+color:grey;
+margin-left:30px;
+padding-top:10px;
+}
+
+
+/* SIDEBAR */
+
+#sidebar{
+height:1000px;
+width:350px;
+float:left;
+background:#e5edd9;
+border-radius:0px 0px 20px 0px;
+}
+
+#sidebar h2{
+color:#82ad30;
+margin-left:20px;
+margin-top:25px;
+}
+
+#sidebar ul{
+list-style:none;
+padding:20px;
+margin-left:20px;
+}
+
+#sidebar ul li{
+padding:15px 0px;
+color:gray;
+}
+
+#sidebar p{
+margin-left:20px;
+margin-right:20px;
+color:gray;
+line-height:1.5;
+}
+
+#footer{
+height:400px;
+width:1200px;
+background:#dfe9d1;
+margin-left:200px;
+margin-top:5px;
+clear:both;
+border-radius:20px;
+}
+
+#f1{
+height:400px;
+width:400px;
+float:left;
+}
+
+#f1 h2{
+margin-left:20px;
+color:black;
+}
+
+#f1 img{
+height:90px;
+width:110px;
+margin:10px;
+}
+#f2{
+height:400px;
+width:400px;
+float:left;
+}
+
+#f2 h2{
+    margin-left:20px;
+    color:black;
+}
+
+#f2 p{
+margin-left:20px;
+color:black;
+line-height:22px;
+}
+#f3{
+height:400px;
+width:400px;
+float:left;
+}
+#f3 h2{
+margin-left:20px;
+color:black;
+}
+
+#f3 p{
+margin-left:20px;
+color:black;
+line-height:22px;
+}
+
+
+#copyright{
+width:1200px;
+margin-left:200px;
+margin-top:20px;
+color:#b8d08a;
+font-size:17px;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<div id="logo">
+<h1>LimeJungle</h1>
+<p>put your slogan here</p>
+</div>
+
+
+<!-- NAVBAR -->
+
+<div id="nav">
+
+<ul>
+<li>HOME</li>
+<li><a href="support.html">SUPPORT</a></li>
+<li><a href="about us.html">ABOUT US</a></li>
+<li><a href="blog.html">BLOG</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+
+<div id="searchbox">
+    <input type="text" id="search" placeholder="Search our site:">
+    🔍
+</div>
+
+</div>
+
+
+<!-- OUTER -->
+
+<div id="outer">
+
+<div id="banner">
+<img src="images/bed.jpg">
+</div>
+
+<div id="line1"></div>
+
+
+<!-- MAIN -->
+
+<div id="main">
+
+
+<!-- CONTENT -->
+
+<div id="content">
+
+<div id="r1">
+
+<h2>Template License</h2>
+
+<p class="date">
+Date:16.03.2018 ! Posted by <span>Owner</span> ! Filed under <span>template</span>,<span>internet</span> with comments <span>(11)</span>
+</p>
+
+<img src="images/girl.jpg">
+
+<br/>
+
+<p class="text">
+This template is licensed under a Creative Commons Attribution 3.0 License.
+You are free to use this template for your personal or commercial website.
+You can modify the design according to your requirements.
+</p>
+
+<p class="read">Read more »</p>
+
+</div>
+
+
+<div id="r2">
+
+<h2>Laptop in meeting room</h2>
+
+<p class="date">
+Date:16.03.2018 ! Posted by <span>Owner</span> ! Filed under <span>template</span>,<span>internet</span> with comments <span>(11)</span>
+</p>
+
+<p class="text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+</p>
+
+<p class="text">
+Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum.
+</p>
+
+<p class="read">Read more »</p>
+
+</div>
+
+
+<div id="r3">
+<p class="text1">Page 1 of 2</p>
+</div>
+
+</div>
+
+
+<!-- SIDEBAR -->
+
+<div id="sidebar">
+
+<h2>Sidebar Menu</h2>
+
+<ul>
+<li>Home</li>
+<li>Template Info</li>
+<li>Style Demo</li>
+<li>Blog</li>
+<li>Archives</li>
+<li>Website Templates</li>
+</ul>
+
+<h2>Sponsors</h2>
+
+<p>
+DreamTemplate<br>
+Over 6000+ Premium Templates
+</p>
+
+<p>
+TemplateMonster<br>
+Website Templates & Themes
+</p>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Donec nec justo eget felis facilisis fermentum.
+Aliquam porttitor mauris sit amet orci.
+Aenean dignissim pellentesque felis.
+</p>
+
+<p>
+Praesent dapibus, neque id cursus faucibus,
+tortor neque egestas augue, eu vulputate magna
+eros eu erat. Aliquam erat volutpat.
+</p>
+
+<p>
+Suspendisse potenti. Sed egestas, ante et
+vulputate volutpat, eros pede semper est,
+vitae luctus metus libero eu augue.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<div id="footer">
+
+    <div id="f1">
+	    <h2>Image Gallery</h2>
+
+    <img src="images/hand.jpg">
+    <img src="images/headphone.jpg">
+    <img src="images/watch.jpg">
+    <img src="images/arrow.jpg">
+    <img src="images/idea.jpg">
+    <img src="images/keyboard.jpg">
+   </div>
+
+  <div id="f2">
+
+    <h2>Lorem Ipsum</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Donec nec justo eget felis facilisis fermentum.<br>
+        Praesent dapibus neque id cursus faucibus.<br>
+        Aliquam erat volutpat, sed consectetur massa.<br>
+        Integer vitae libero ac risus egestas placerat.
+    </p>
+  <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Donec nec justo eget felis facilisis fermentum.<br>
+        Praesent dapibus neque id cursus faucibus.<br>
+        Aliquam erat volutpat, sed consectetur massa.<br>
+        Integer vitae libero ac risus egestas placerat.
+    </p>
+</div>
+
+    <div id="f3">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        Praesent dapibus neque id cursus faucibus.<br>
+        Email: info@example.com<br>
+        Phone: +91 9876543210<br>
+        Donec nec justo eget felis facilisis fermentum.<br>
+        Aliquam erat volutpat, sed consectetur massa.
+    </p>
+    <p>
+        Praesent dapibus neque id cursus faucibus.<br>
+        Email: info@example.com<br>
+        Phone: +91 9125404238<br>
+        Donec nec justo eget felis facilisis fermentum.<br>
+        Aliquam erat volutpat, sed consectetur massa.
+    </p>
+</div>
+</div>
+
+<div id="copyright">
+<span>Copyright © 2010 SiteName - All Rights Reserved</span>
+<span style="float:right;">
+Free CSS Templates by Free Website TemplateZ
+</span>
+</div>
+</body>
+</html>
